@@ -1,10 +1,24 @@
+import Education from "components/Education";
+import Introduction from "components/Introduction";
+import Project from "components/Project";
+import SideGNB from "components/SideGNB";
+import Stack from "components/Stack";
+import Study from "components/Study";
+
 function App() {
   return (
-    <>
-      <h1 className="text-3xl text-yellow-300 font-bold underline">
-        Hello world!
-      </h1>
-    </>
+    <main className="relative p-5 bg-blue-800 w-screen h-[500vh] flex-wrap">
+      <section>
+        <SideGNB />
+      </section>
+      <section className="absolute ml-[16rem]">
+        <Introduction />
+        <Stack />
+        <Project />
+        <Study />
+        <Education />
+      </section>
+    </main>
   );
 }
 
